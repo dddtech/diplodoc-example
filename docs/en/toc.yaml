@@ -7,7 +7,7 @@ items:
     href: page.md
   - name: Another page 
     href: anotherpage.md
-  - name: Sub-Section 
+  - name: Analysis
     include:
-      path: sub-section/toc.yaml
+      path: Analysis/toc.yaml
       mode: link

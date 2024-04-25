@@ -7,6 +7,81 @@
 ### 2. Формирование и отправка сообщения о создании доставки
 2.1 Вставка выборки таблицы + Фильтр таблиц
 
+{% cut "Пример сообщения" %}
+
+```json
+{
+  "orderNumber": "1239874563",
+  "orderType": "DIRECT",
+  "orderTimestamp": "2017-12-12T14:12:23.502Z",
+  "saleChannel": "CALL_CENTER",
+  "transferDocumentNumber": "4618732341",
+  "checkoutObject": "S002",
+  "brand": "MVIDEO",
+  "sourceSystem": "CRM",
+  "deliveryParams": {
+    "deliveryType": "PICKUP",
+    "deliveryDate": "2022-02-22",
+    "deliveryTimeFrom": "17:00",
+    "deliveryTimeTo": "18:00",
+    "comment": " ",
+    "express": true,
+    "hiTechnic": false
+  },
+  "deliveryItem": [
+    {
+      "positionNumber": 10,
+      "extItemId": "4ac60e6e-ed67-4bc0-8c74-aeb07dfec106",
+      "itemType": "PRODUCT",
+      "materialNumber": "20065055",
+      "status": "CREATED",
+      "reserveObject": "S790",
+      "handoverObject": "S790",
+      "deliveryDate": "2022-02-22",
+      "quantity": 1,
+      "quantityUnit": ".",
+      "priceDiscount": 1900,
+      "priceTotal": 2000,
+      "showcaseSample": true,
+      "transferDocumentParams": {
+        "shipmentGuid": "2136afba-9d8d-40a4-b2bd-f1192a50385a",
+        "itemDocNumber": "0000000001"
+      },
+      "reserveInfo": {
+        "reserveNumber": "123573565",
+        "reserveNumberPosition": "000001",
+        "reserveRequestId": "CRM000003215",
+        "externalPositionNumber": "001"
+      }
+    }
+  ],
+  "address": {
+    "postCode": "390048",
+    "city": "",
+    "city2": ". ",
+    "region": " ",
+    "street": "",
+    "house": "31",
+    "building": "2",
+    "intercom": "322B12",
+    "apartment": "214",
+    "entrance": "6",
+    "floor": "4",
+    "kladrCode": "77000000000151900"
+  },
+  "payment": {
+    "paymentType": "ONLINE",
+    "paymentStatus": "PAID"
+  },
+  "recipient": {
+    "recipientName": " ",
+    "phoneNumber": "+79129999999",
+    "addPhoneNumber": "+79129999999"
+  }
+}
+
+``` 
+{% endcut %}
 
 | Поле                    | Тип данных | Обязательность | Пример             | Описание                            | Маппинг из REST запроса в CRM в топик `delivery-command` |
 |-------------------------|------------|----------------|--------------------|-------------------------------------|---------------------------------------------------------|
@@ -112,78 +187,3 @@
 | `addPhoneNumber`        | string     | 0              | +79129999999      | Дополнительный телефон получателя  |                                                         |
 
 2.2  Include A Shared Block + Фильтр таблиц
-
-
-```json
-{
-  "orderNumber": "1239874563",
-  "orderType": "DIRECT",
-  "orderTimestamp": "2017-12-12T14:12:23.502Z",
-  "saleChannel": "CALL_CENTER",
-  "transferDocumentNumber": "4618732341",
-  "checkoutObject": "S002",
-  "brand": "MVIDEO",
-  "sourceSystem": "CRM",
-  "deliveryParams": {
-    "deliveryType": "PICKUP",
-    "deliveryDate": "2022-02-22",
-    "deliveryTimeFrom": "17:00",
-    "deliveryTimeTo": "18:00",
-    "comment": " ",
-    "express": true,
-    "hiTechnic": false
-  },
-  "deliveryItem": [
-    {
-      "positionNumber": 10,
-      "extItemId": "4ac60e6e-ed67-4bc0-8c74-aeb07dfec106",
-      "itemType": "PRODUCT",
-      "materialNumber": "20065055",
-      "status": "CREATED",
-      "reserveObject": "S790",
-      "handoverObject": "S790",
-      "deliveryDate": "2022-02-22",
-      "quantity": 1,
-      "quantityUnit": ".",
-      "priceDiscount": 1900,
-      "priceTotal": 2000,
-      "showcaseSample": true,
-      "transferDocumentParams": {
-        "shipmentGuid": "2136afba-9d8d-40a4-b2bd-f1192a50385a",
-        "itemDocNumber": "0000000001"
-      },
-      "reserveInfo": {
-        "reserveNumber": "123573565",
-        "reserveNumberPosition": "000001",
-        "reserveRequestId": "CRM000003215",
-        "externalPositionNumber": "001"
-      }
-    }
-  ],
-  "address": {
-    "postCode": "390048",
-    "city": "",
-    "city2": ". ",
-    "region": " ",
-    "street": "",
-    "house": "31",
-    "building": "2",
-    "intercom": "322B12",
-    "apartment": "214",
-    "entrance": "6",
-    "floor": "4",
-    "kladrCode": "77000000000151900"
-  },
-  "payment": {
-    "paymentType": "ONLINE",
-    "paymentStatus": "PAID"
-  },
-  "recipient": {
-    "recipientName": " ",
-    "phoneNumber": "+79129999999",
-    "addPhoneNumber": "+79129999999"
-  }
-}
-
-``` 
-{collapsible="true"}

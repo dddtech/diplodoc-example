@@ -1,0 +1,5 @@
+title: delivery/rest
+href: index.yaml
+items:
+  - name: delivery/rest
+    href: rest.md
