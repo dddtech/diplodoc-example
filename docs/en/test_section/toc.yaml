@@ -1,0 +1,4 @@
+title: test example
+links: index.yaml
+  - title: rest
+    href: rest.md
