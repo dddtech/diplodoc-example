@@ -7,9 +7,9 @@
 ### 2. Формирование и отправка сообщения о создании доставки
 2.1 Вставка выборки таблицы + Фильтр таблиц
 
-{% cut "Swagger" %}
+![](//diplodoc-example/docs/en/Analysis/firstDiagram.png)
 
-![[firstDiagram.png]]
+
 <details>
 
 ```
@@ -70,7 +70,6 @@ else Клиент не нажал кнопку "Я около магазина"
 
 </details>
 
-{% endcut %}
 
 {% cut "Пример сообщения" %}
 
