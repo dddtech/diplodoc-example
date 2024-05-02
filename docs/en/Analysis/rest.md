@@ -7,7 +7,7 @@
 ### 2. Формирование и отправка сообщения о создании доставки
 2.1 Вставка выборки таблицы + Фильтр таблиц
 
-![](_images/firstDiagram.png)
+![TestUml](_images/firstDiagram.png)
 
 
 <details>

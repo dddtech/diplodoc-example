@@ -31,10 +31,10 @@ now you have development server with hot reload runing and serving built documen
 
 press Use this template -> Open in a codespace
 
-![open in a codespace](_images/open-in-a-codespace.jpeg)
+![open in a codespace](images/open-in-a-codespace.jpeg)
 
 wait for the development server startup
 
 enjoy developing documentation with html result preview in split view
 
-![codespaces project](_images/codespaces-project.jpeg)
+![codespaces project](images/codespaces-project.jpeg)
