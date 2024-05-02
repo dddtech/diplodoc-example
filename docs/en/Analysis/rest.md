@@ -21,7 +21,7 @@ skinparam roundcorner 10
 skinparam backgroundColor EFEFEF
 skinparam style strictuml
 skinparam ParticipantBorderColor EFEFEF
-skinparam DatabaseBorderColor EFEFEF  
+skinparam DatabaseBorderColor EFEFEF
 
 skinparam sequence {
 ArrowColor 49494A
