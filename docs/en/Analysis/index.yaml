@@ -1,4 +1,6 @@
-title: delivery/rest
+title: Documentation Template
 links:
   - title: delivery/rest
     href: rest.md
+  - title: Отправка уведомлений в Telegram сборщику заказов
+    href: file1.md
