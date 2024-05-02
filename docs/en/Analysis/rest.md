@@ -7,7 +7,7 @@
 ### 2. Формирование и отправка сообщения о создании доставки
 2.1 Вставка выборки таблицы + Фильтр таблиц
 
-![](/Users/dd/WritersideProjects/diplodoc-example/docs/en/Analysis/firstDiagram.png)
+![](docs/en/Analysis/firstDiagram.png)
 
 
 <details>
